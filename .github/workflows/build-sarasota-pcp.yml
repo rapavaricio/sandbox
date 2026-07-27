@@ -6,11 +6,13 @@ on:
     paths:
       - "scripts/build_sarasota_pcp.py"
       - "scripts/build_sarasota_pcp_v2.py"
+      - "scripts/nppes_peds_diagnostic.py"
       - ".github/workflows/build-sarasota-pcp.yml"
   pull_request:
     paths:
       - "scripts/build_sarasota_pcp.py"
       - "scripts/build_sarasota_pcp_v2.py"
+      - "scripts/nppes_peds_diagnostic.py"
       - ".github/workflows/build-sarasota-pcp.yml"
       - "tmp/trigger-sarasota-pcp.txt"
 
@@ -39,25 +41,12 @@ jobs:
       - name: Install dependency
         run: python -m pip install --disable-pip-version-check requests
 
-      - name: Extract and verify Sarasota County physicians
-        run: python scripts/build_sarasota_pcp_v2.py
+      - name: Run NPPES pediatric diagnostic
+        run: python scripts/nppes_peds_diagnostic.py
 
-      - name: Upload public-data extracts
+      - name: Upload diagnostic extract
         uses: actions/upload-artifact@v4
         with:
-          name: sarasota-primary-care-public-data
-          path: output/
+          name: nppes-pediatric-diagnostic
+          path: output/nppes_peds_diagnostic.json
           retention-days: 7
-
-      - name: Commit generated public-data extracts
-        if: github.event_name == 'push'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add output/
-          if git diff --cached --quiet; then
-            echo "No output changes to commit."
-          else
-            git commit -m "Update Sarasota County primary care public directory"
-            git push
-          fi
