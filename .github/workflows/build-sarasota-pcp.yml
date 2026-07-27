@@ -8,6 +8,7 @@ on:
       - "scripts/build_sarasota_pcp_v2.py"
       - "scripts/nppes_peds_diagnostic.py"
       - ".github/workflows/build-sarasota-pcp.yml"
+      - "tmp/trigger-sarasota-pcp.txt"
   pull_request:
     paths:
       - "scripts/build_sarasota_pcp.py"
@@ -50,3 +51,16 @@ jobs:
           name: nppes-pediatric-diagnostic
           path: output/nppes_peds_diagnostic.json
           retention-days: 7
+
+      - name: Commit diagnostic output on push
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/nppes_peds_diagnostic.json
+          if git diff --cached --quiet; then
+            echo "No diagnostic changes to commit."
+          else
+            git commit -m "Add NPPES pediatric diagnostic output"
+            git push
+          fi
