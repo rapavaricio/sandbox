@@ -6,12 +6,17 @@ on:
     paths:
       - "scripts/build_sarasota_pcp.py"
       - ".github/workflows/build-sarasota-pcp.yml"
+  pull_request:
+    paths:
+      - "scripts/build_sarasota_pcp.py"
+      - ".github/workflows/build-sarasota-pcp.yml"
+      - "tmp/trigger-sarasota-pcp.txt"
 
 permissions:
   contents: write
 
 concurrency:
-  group: build-sarasota-pcp
+  group: build-sarasota-pcp-${{ github.event_name }}-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -43,6 +48,7 @@ jobs:
           retention-days: 7
 
       - name: Commit generated public-data extracts
+        if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
