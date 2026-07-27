@@ -27,11 +27,21 @@ jobs:
       - name: Install dependency
         run: python -m pip install --disable-pip-version-check requests
 
-      - name: Extract and verify Sarasota County physicians
-        run: python scripts/build_sarasota_pcp_v3.py
-
-      - name: Validate extract content
+      - name: Extract and capture complete log
         run: |
+          mkdir -p output
+          set +e
+          python scripts/build_sarasota_pcp_v3.py 2>&1 | tee output/v3_run.log
+          status=${PIPESTATUS[0]}
+          echo "$status" > output/v3_exit_code.txt
+          exit 0
+
+      - name: Validate extract content when extraction succeeded
+        run: |
+          if [ "$(cat output/v3_exit_code.txt)" != "0" ]; then
+            echo "Extraction failed; validation deferred until after artifact upload."
+            exit 0
+          fi
           python - <<'PY'
           import csv, json
           from pathlib import Path
@@ -60,9 +70,13 @@ jobs:
           })
           PY
 
-      - name: Upload validated extract
+      - name: Upload extract and diagnostic log
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: sarasota-primary-care-public-data-comprehensive
           path: output/
           retention-days: 7
+
+      - name: Fail job after artifact upload if extraction failed
+        run: test "$(cat output/v3_exit_code.txt)" = "0"
