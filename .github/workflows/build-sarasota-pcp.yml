@@ -1,23 +1,15 @@
-name: Build Sarasota PCP Public Directory
+name: Build Sarasota PCP Comprehensive Directory
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - "scripts/build_sarasota_pcp.py"
-      - ".github/workflows/build-sarasota-pcp.yml"
   pull_request:
     paths:
       - "scripts/build_sarasota_pcp.py"
+      - "scripts/build_sarasota_pcp_v3.py"
       - ".github/workflows/build-sarasota-pcp.yml"
-      - "tmp/trigger-sarasota-pcp.txt"
 
 permissions:
-  contents: write
-
-concurrency:
-  group: build-sarasota-pcp-${{ github.event_name }}-${{ github.ref }}
-  cancel-in-progress: false
+  contents: read
 
 jobs:
   build:
@@ -26,8 +18,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -37,25 +27,56 @@ jobs:
       - name: Install dependency
         run: python -m pip install --disable-pip-version-check requests
 
-      - name: Extract and verify Sarasota County physicians
-        run: python scripts/build_sarasota_pcp.py
+      - name: Extract and capture complete log
+        run: |
+          mkdir -p output
+          set +e
+          python scripts/build_sarasota_pcp_v3.py 2>&1 | tee output/v3_run.log
+          status=${PIPESTATUS[0]}
+          echo "$status" > output/v3_exit_code.txt
+          exit 0
 
-      - name: Upload public-data extracts
+      - name: Validate extract content when extraction succeeded
+        run: |
+          if [ "$(cat output/v3_exit_code.txt)" != "0" ]; then
+            echo "Extraction failed; validation deferred until after artifact upload."
+            exit 0
+          fi
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+
+          rows = list(csv.DictReader(Path('output/sarasota_primary_care_raw.csv').open(encoding='utf-8-sig')))
+          summary = json.loads(Path('output/sarasota_primary_care_summary.json').read_text())
+          known_peds = {
+              '1659722296', '1871574699', '1427340892', '1497016943',
+              '1417948837', '1518985134', '1699091355', '1730529652',
+          }
+          npis = {r['npi'] for r in rows}
+          missing = sorted(known_peds - npis)
+          assert not missing, f'Missing known Sarasota pediatricians: {missing}'
+          assert summary['unique_physicians'] == len(npis)
+          assert summary['unique_physicians'] >= 600
+          pediatric_npis = {
+              r['npi'] for r in rows
+              if r['primary_taxonomy_code'] in {'208000000X', '2080A0000X'}
+          }
+          assert len(pediatric_npis) >= 8, f'Pediatric count remains implausibly low: {len(pediatric_npis)}'
+          assert all(r['census_county_fips'] in {'12115', ''} for r in rows)
+          print({
+              'rows': len(rows),
+              'unique_physicians': len(npis),
+              'pediatric_physicians': len(pediatric_npis),
+          })
+          PY
+
+      - name: Upload extract and diagnostic log
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: sarasota-primary-care-public-data
+          name: sarasota-primary-care-public-data-comprehensive
           path: output/
           retention-days: 7
 
-      - name: Commit generated public-data extracts
-        if: github.event_name == 'push'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add output/
-          if git diff --cached --quiet; then
-            echo "No output changes to commit."
-          else
-            git commit -m "Update Sarasota County primary care public directory"
-            git push
-          fi
+      - name: Fail job after artifact upload if extraction failed
+        run: test "$(cat output/v3_exit_code.txt)" = "0"
