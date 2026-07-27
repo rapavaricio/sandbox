@@ -1,0 +1,66 @@
+{
+  "city_counts": {
+    "ENGLEWOOD": 11,
+    "LAKEWOOD RANCH": 9,
+    "LONGBOAT KEY": 6,
+    "NOKOMIS": 9,
+    "NORTH PORT": 30,
+    "NORTH VENICE": 12,
+    "OSPREY": 14,
+    "SARASOTA": 450,
+    "VENICE": 105
+  },
+  "county_verification_counts": {
+    "Included by Sarasota-only ZIP fallback; address geocoder unmatched": 30,
+    "Verified by U.S. Census address geocoder": 616
+  },
+  "extraction_date": "2026-07-27",
+  "medicare_listed_unique_physicians": 180,
+  "methodology": {
+    "all_caveat": "All qualifying records found through the defined public-data method as of the extraction date; public registries may contain stale or incomplete practice data.",
+    "county_fips": "12115",
+    "insurance_caution": "Public payer identifiers and CMS assignment fields are indicators only; they are not confirmation of current plan-network participation or acceptance of new patients.",
+    "nppes_filter": "Entity Type 1, active physician records, primary taxonomy in requested primary-care code set, practice location ZIP 342*, then Sarasota County address verification"
+  },
+  "physician_location_rows": 646,
+  "practice_groups_or_address_clusters": 363,
+  "practice_size_tier_counts": {
+    "Enterprise / Health System (100+)": 141,
+    "Mid-size Group (10-49)": 7,
+    "Mid-size PCP Cluster (10+ known at address)": 72,
+    "Small Group (2-9)": 17,
+    "Small PCP Cluster (2-9 known at address)": 211,
+    "Solo / Sole Proprietor": 91,
+    "Unknown / Unverified": 107
+  },
+  "scope_counts": {
+    "Adult & All-Ages Primary Care": 292,
+    "Adult Primary Care": 315,
+    "Adult/Geriatric Primary Care": 10,
+    "Mixed Adult & Pediatric (Med-Peds indicator)": 27,
+    "Pediatric Primary Care": 1,
+    "Pediatric/Adolescent Primary Care": 1
+  },
+  "specialty_counts": {
+    "Family Medicine": 258,
+    "Family Medicine - Adult Medicine": 3,
+    "Family Medicine - Geriatric Medicine": 3,
+    "General Practice": 35,
+    "Internal Medicine": 335,
+    "Internal Medicine - Geriatric Medicine": 7,
+    "Pediatrics": 4,
+    "Pediatrics - Adolescent Medicine": 1
+  },
+  "specialty_counts_unique_npi": {
+    "Family Medicine": 245,
+    "Family Medicine - Adult Medicine": 3,
+    "Family Medicine - Geriatric Medicine": 3,
+    "General Practice": 33,
+    "Internal Medicine": 318,
+    "Internal Medicine - Geriatric Medicine": 7,
+    "Pediatrics": 4,
+    "Pediatrics - Adolescent Medicine": 1
+  },
+  "unique_physicians": 614,
+  "unique_practice_locations": 315
+}
