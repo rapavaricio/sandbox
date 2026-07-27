@@ -5,15 +5,13 @@ on:
   push:
     paths:
       - "scripts/build_sarasota_pcp.py"
-      - "scripts/build_sarasota_pcp_v2.py"
-      - "scripts/nppes_peds_diagnostic.py"
+      - "scripts/build_sarasota_pcp_v3.py"
       - ".github/workflows/build-sarasota-pcp.yml"
       - "tmp/trigger-sarasota-pcp.txt"
   pull_request:
     paths:
       - "scripts/build_sarasota_pcp.py"
-      - "scripts/build_sarasota_pcp_v2.py"
-      - "scripts/nppes_peds_diagnostic.py"
+      - "scripts/build_sarasota_pcp_v3.py"
       - ".github/workflows/build-sarasota-pcp.yml"
       - "tmp/trigger-sarasota-pcp.txt"
 
@@ -42,25 +40,35 @@ jobs:
       - name: Install dependency
         run: python -m pip install --disable-pip-version-check requests
 
-      - name: Run NPPES pediatric diagnostic
-        run: python scripts/nppes_peds_diagnostic.py
+      - name: Extract and verify Sarasota County physicians
+        run: python scripts/build_sarasota_pcp_v3.py
 
-      - name: Upload diagnostic extract
+      - name: Validate extract content
+        run: |
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+
+          rows = list(csv.DictReader(Path('output/sarasota_primary_care_raw.csv').open(encoding='utf-8-sig')))
+          summary = json.loads(Path('output/sarasota_primary_care_summary.json').read_text())
+          known_peds = {
+              '1659722296', '1871574699', '1427340892', '1497016943',
+              '1417948837', '1518985134', '1699091355', '1730529652',
+          }
+          npis = {r['npi'] for r in rows}
+          missing = sorted(known_peds - npis)
+          assert not missing, f'Missing known Sarasota pediatricians: {missing}'
+          assert summary['unique_physicians'] == len(npis)
+          assert summary['unique_physicians'] >= 600
+          peds = {r['npi'] for r in rows if r['primary_taxonomy_code'] in {'208000000X', '2080A0000X'}}
+          assert len(peds) >= 8, f'Pediatric count remains implausibly low: {len(peds)}'
+          assert all(r['census_county_fips'] in {'12115', ''} for r in rows)
+          print({'rows': len(rows), 'unique_physicians': len(npis), 'pediatric_physicians': len(peds)})
+          PY
+
+      - name: Upload public-data extracts
         uses: actions/upload-artifact@v4
         with:
-          name: nppes-pediatric-diagnostic
-          path: output/nppes_peds_diagnostic.json
+          name: sarasota-primary-care-public-data-comprehensive
+          path: output/
           retention-days: 7
-
-      - name: Commit diagnostic output on push
-        if: github.event_name == 'push'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add output/nppes_peds_diagnostic.json
-          if git diff --cached --quiet; then
-            echo "No diagnostic changes to commit."
-          else
-            git commit -m "Add NPPES pediatric diagnostic output"
-            git push
-          fi
