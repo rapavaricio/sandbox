@@ -5,8 +5,8 @@ NPPES taxonomy-description search is ambiguous for terms such as "Pediatrics"
 (it can return pediatric nurse practitioners while omitting physician pediatricians).
 This acquisition pass therefore searches all individual providers in each candidate
 ZIP, paginates the results, and filters locally by exact primary physician taxonomy
-code. If a ZIP reaches the NPPES 1,200-result pagination ceiling, it automatically
-subdivides that ZIP by last-name prefix and deduplicates the results.
+code. Capped ZIP searches are split by primary versus secondary location and, only
+when necessary, by valid two-character surname prefixes.
 """
 
 from __future__ import annotations
@@ -26,13 +26,19 @@ SARASOTA_AREA_ZIPS = [
 ]
 
 
-def nppes_page(postal_code: str, skip: int, last_name: str | None = None) -> dict[str, Any]:
+def nppes_page(
+    postal_code: str,
+    skip: int,
+    *,
+    last_name: str | None = None,
+    address_purpose: str = "LOCATION",
+) -> dict[str, Any]:
     params: dict[str, Any] = {
         "version": "2.1",
         "enumeration_type": "NPI-1",
         "state": "FL",
         "postal_code": postal_code,
-        "address_purpose": "LOCATION",
+        "address_purpose": address_purpose,
         "limit": 200,
         "skip": skip,
         "pretty": "off",
@@ -42,11 +48,21 @@ def nppes_page(postal_code: str, skip: int, last_name: str | None = None) -> dic
     return base.get_json(base.NPPES_API, params=params)
 
 
-def fetch_query(postal_code: str, last_name: str | None = None) -> tuple[list[dict[str, Any]], bool]:
+def fetch_query(
+    postal_code: str,
+    *,
+    last_name: str | None = None,
+    address_purpose: str = "LOCATION",
+) -> tuple[list[dict[str, Any]], bool]:
     results_all: list[dict[str, Any]] = []
     hit_cap = False
     for skip in range(0, 1200, 200):
-        payload = nppes_page(postal_code, skip, last_name)
+        payload = nppes_page(
+            postal_code,
+            skip,
+            last_name=last_name,
+            address_purpose=address_purpose,
+        )
         results = payload.get("results") or []
         if not isinstance(results, list):
             results = []
@@ -59,30 +75,94 @@ def fetch_query(postal_code: str, last_name: str | None = None) -> tuple[list[di
     return results_all, hit_cap
 
 
+def dedupe_by_npi(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    by_npi: dict[str, dict[str, Any]] = {}
+    for result in results:
+        number = base.clean(result.get("number"))
+        if number:
+            by_npi[number] = result
+    return list(by_npi.values())
+
+
+def surname_partition_results(postal_code: str, address_purpose: str) -> list[dict[str, Any]]:
+    """Partition a capped search using the API's two-character wildcard requirement."""
+    collected: list[dict[str, Any]] = []
+    letters = string.ascii_uppercase
+    prefixes = [f"{first}{second}*" for first in letters for second in letters]
+    # Include common punctuation as the second character (e.g., O'NEIL, A-B...).
+    prefixes.extend(f"{first}'*" for first in letters)
+    prefixes.extend(f"{first}-*" for first in letters)
+
+    nonempty = 0
+    for prefix in prefixes:
+        segment, segment_hit_cap = fetch_query(
+            postal_code,
+            last_name=prefix,
+            address_purpose=address_purpose,
+        )
+        if segment_hit_cap:
+            raise RuntimeError(
+                f"NPPES ZIP {postal_code} / {address_purpose} / surname prefix {prefix} "
+                "still reached the 1,200-result ceiling"
+            )
+        if segment:
+            nonempty += 1
+            collected.extend(segment)
+
+    # One-character surnames cannot use a valid trailing wildcard, so query exactly.
+    for one_char in [*letters, *string.digits]:
+        segment, segment_hit_cap = fetch_query(
+            postal_code,
+            last_name=one_char,
+            address_purpose=address_purpose,
+        )
+        if segment_hit_cap:
+            raise RuntimeError(
+                f"NPPES ZIP {postal_code} / {address_purpose} / exact surname {one_char} "
+                "reached the 1,200-result ceiling"
+            )
+        if segment:
+            nonempty += 1
+            collected.extend(segment)
+
+    deduped = dedupe_by_npi(collected)
+    base.log(
+        f"NPPES ZIP {postal_code} / {address_purpose}: "
+        f"{len(deduped)} records from {nonempty} nonempty surname partitions"
+    )
+    return deduped
+
+
+def purpose_results(postal_code: str, address_purpose: str) -> list[dict[str, Any]]:
+    results, hit_cap = fetch_query(postal_code, address_purpose=address_purpose)
+    if not hit_cap:
+        base.log(
+            f"NPPES ZIP {postal_code} / {address_purpose}: {len(results)} individual-provider results"
+        )
+        return results
+    base.log(
+        f"NPPES ZIP {postal_code} / {address_purpose} reached pagination ceiling; "
+        "subdividing by valid two-character surname prefixes"
+    )
+    # Preserve the first 1,200 as a defensive supplement, then add all partitioned records.
+    return dedupe_by_npi([*results, *surname_partition_results(postal_code, address_purpose)])
+
+
 def raw_results_for_zip(postal_code: str) -> list[dict[str, Any]]:
-    broad, hit_cap = fetch_query(postal_code)
+    broad, hit_cap = fetch_query(postal_code, address_purpose="LOCATION")
     if not hit_cap:
         base.log(f"NPPES ZIP {postal_code}: {len(broad)} individual-provider results")
         return broad
 
-    base.log(f"NPPES ZIP {postal_code} reached pagination ceiling; subdividing by last-name prefix")
-    segmented: list[dict[str, Any]] = []
-    for prefix in [f"{letter}*" for letter in string.ascii_uppercase] + [
-        "0*", "1*", "2*", "3*", "4*", "5*", "6*", "7*", "8*", "9*"
-    ]:
-        segment, segment_hit_cap = fetch_query(postal_code, prefix)
-        if segment_hit_cap:
-            raise RuntimeError(
-                f"NPPES ZIP {postal_code} / last-name prefix {prefix} still reached the 1,200-result ceiling"
-            )
-        segmented.extend(segment)
-    by_npi: dict[str, dict[str, Any]] = {}
-    for result in [*broad, *segmented]:
-        number = base.clean(result.get("number"))
-        if number:
-            by_npi[number] = result
-    base.log(f"NPPES ZIP {postal_code}: {len(by_npi)} deduplicated segmented results")
-    return list(by_npi.values())
+    base.log(
+        f"NPPES ZIP {postal_code} reached LOCATION pagination ceiling; "
+        "splitting PRIMARY and SECONDARY practice locations"
+    )
+    primary = purpose_results(postal_code, "PRIMARY")
+    secondary = purpose_results(postal_code, "SECONDARY")
+    combined = dedupe_by_npi([*broad, *primary, *secondary])
+    base.log(f"NPPES ZIP {postal_code}: {len(combined)} deduplicated split-location results")
+    return combined
 
 
 def primary_taxonomy(result: dict[str, Any]) -> tuple[dict[str, Any] | None, set[str]]:
@@ -196,21 +276,21 @@ def fetch_nppes_comprehensive() -> list[dict[str, Any]]:
         if qualifying_npis:
             base.log(f"NPPES ZIP {postal_code}: {len(qualifying_npis)} qualifying primary-care physicians")
 
-    peds_npis = {
+    pediatric_npis = {
         r["npi"] for r in rows if r["primary_taxonomy_code"] in {"208000000X", "2080A0000X"}
     }
     known_pediatric_npis = {
         "1659722296", "1871574699", "1427340892", "1497016943",
         "1417948837", "1518985134", "1699091355", "1730529652",
     }
-    missing_known = sorted(known_pediatric_npis - peds_npis)
+    missing_known = sorted(known_pediatric_npis - pediatric_npis)
     if missing_known:
         raise RuntimeError(f"Comprehensive NPPES acquisition missed diagnostic pediatric NPIs: {missing_known}")
 
     base.log(
         f"Comprehensive NPPES produced {len(rows)} physician-location records across "
         f"{len({r['npi'] for r in rows})} NPIs before county verification; "
-        f"pediatric NPIs={len(peds_npis)}; ZIP counts={zip_counts}"
+        f"pediatric NPIs={len(pediatric_npis)}; ZIP counts={zip_counts}"
     )
     return rows
 
