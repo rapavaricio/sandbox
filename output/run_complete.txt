@@ -1,0 +1,4 @@
+completed=2026-07-27T19:37:24.213607+00:00
+unique_physicians=614
+physician_location_rows=646
+practice_groups_or_address_clusters=363
