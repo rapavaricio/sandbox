@@ -1,0 +1,2207 @@
+{
+  "known": {
+    "1659722296": {
+      "status": 200,
+      "result_count": 1,
+      "results": [
+        {
+          "number": "1659722296",
+          "basic": {
+            "credential": "MD",
+            "enumeration_date": "2016-06-24",
+            "first_name": "ALEXIS",
+            "last_name": "FERNANDEZ",
+            "last_updated": "2019-07-02",
+            "middle_name": "NAPOLEON",
+            "name_prefix": "Dr.",
+            "sex": "M",
+            "sole_proprietor": "YES",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "390200000X",
+              "desc": "Student in an Organized Health Care Education/Training Program",
+              "license": "TRN23477",
+              "primary": false,
+              "state": "FL",
+              "taxonomy_group": ""
+            },
+            {
+              "code": "208000000X",
+              "desc": "Pediatrics",
+              "license": "ME139596",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2020 CATTLEMEN RD STE 600",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-366-7582",
+              "postal_code": "342326284",
+              "state": "FL",
+              "telephone_number": "941-955-9151"
+            },
+            {
+              "address_1": "2020 CATTLEMEN RD STE 600",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-366-7582",
+              "postal_code": "342326284",
+              "state": "FL",
+              "telephone_number": "941-955-9151"
+            }
+          ],
+          "practiceLocations": []
+        }
+      ]
+    },
+    "1871574699": {
+      "status": 200,
+      "result_count": 1,
+      "results": [
+        {
+          "number": "1871574699",
+          "basic": {
+            "credential": "MD",
+            "enumeration_date": "2005-11-09",
+            "first_name": "ASHFAQ",
+            "last_name": "FATMI",
+            "last_updated": "2026-07-13",
+            "middle_name": "S",
+            "name_prefix": "--",
+            "name_suffix": "--",
+            "sex": "M",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "208000000X",
+              "desc": "Pediatrics",
+              "license": "ME0076197",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "1951 NORTHGATE BLVD",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-358-0417",
+              "postal_code": "342342143",
+              "state": "FL",
+              "telephone_number": "941-355-0687"
+            },
+            {
+              "address_1": "1951 NORTHGATE BLVD",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-358-0417",
+              "postal_code": "342342143",
+              "state": "FL",
+              "telephone_number": "941-355-0687"
+            }
+          ],
+          "practiceLocations": []
+        }
+      ]
+    },
+    "1427340892": {
+      "status": 200,
+      "result_count": 1,
+      "results": [
+        {
+          "number": "1427340892",
+          "basic": {
+            "credential": "M.D.",
+            "enumeration_date": "2011-05-04",
+            "first_name": "JAZMIN",
+            "last_name": "LESNICK",
+            "last_updated": "2018-05-11",
+            "middle_name": "LARISA",
+            "name_prefix": "Dr.",
+            "sex": "F",
+            "sole_proprietor": "YES",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "208000000X",
+              "desc": "Pediatrics",
+              "license": "ME136281",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            },
+            {
+              "code": "208000000X",
+              "desc": "Pediatrics",
+              "license": "27347",
+              "primary": false,
+              "state": "NE",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "501 6TH AVE S",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "ST PETERSBURG",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "337014634",
+              "state": "FL",
+              "telephone_number": "727-767-4429"
+            },
+            {
+              "address_1": "1700 S TAMIAMI TRL",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-917-1308",
+              "postal_code": "342393509",
+              "state": "FL",
+              "telephone_number": "941-917-7490"
+            }
+          ],
+          "practiceLocations": []
+        }
+      ]
+    },
+    "1497016943": {
+      "status": 200,
+      "result_count": 1,
+      "results": [
+        {
+          "number": "1497016943",
+          "basic": {
+            "certification_date": "2024-08-24",
+            "credential": "M.D.",
+            "enumeration_date": "2012-05-31",
+            "first_name": "KESHA",
+            "last_name": "STEVENS",
+            "last_updated": "2024-08-24",
+            "middle_name": "L",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "208000000X",
+              "desc": "Pediatrics",
+              "license": "MS24293",
+              "primary": false,
+              "state": "MS",
+              "taxonomy_group": ""
+            },
+            {
+              "code": "208000000X",
+              "desc": "Pediatrics",
+              "license": "ME123982",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "7721 ROMA DUNE DR",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "WESLEY CHAPEL",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "335454881",
+              "state": "FL",
+              "telephone_number": "901-212-2950"
+            },
+            {
+              "address_1": "2201 CANTU CT STE 117",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326254",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            }
+          ],
+          "practiceLocations": [
+            {
+              "address_1": "7276 SOUTHCREST PKWY",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SOUTHAVEN",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "386714760",
+              "state": "MS",
+              "telephone_number": "662-349-6577"
+            },
+            {
+              "address_1": "37920 MEDICAL ARTS CT",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "ZEPHYRHILLS",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "33541",
+              "state": "FL",
+              "telephone_number": "352-518-2000"
+            },
+            {
+              "address_1": "5001 E BUSCH BLVD",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "TAMPA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "336175303",
+              "state": "FL",
+              "telephone_number": "813-984-8846"
+            }
+          ]
+        }
+      ]
+    },
+    "1417948837": {
+      "status": 200,
+      "result_count": 1,
+      "results": [
+        {
+          "number": "1417948837",
+          "basic": {
+            "certification_date": "2024-04-16",
+            "credential": "MD",
+            "enumeration_date": "2005-11-03",
+            "first_name": "KARI",
+            "last_name": "EVERETT",
+            "last_updated": "2024-04-16",
+            "middle_name": "ORCHARD",
+            "name_prefix": "Dr.",
+            "sex": "F",
+            "sole_proprietor": "YES",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "208000000X",
+              "desc": "Pediatrics",
+              "license": "ME128727",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2200 RINGLING BLVD",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-861-2719",
+              "postal_code": "342376102",
+              "state": "FL",
+              "telephone_number": "941-861-2900"
+            },
+            {
+              "address_1": "2200 RINGLING BLVD",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-861-2719",
+              "postal_code": "342376102",
+              "state": "FL",
+              "telephone_number": "941-861-2900"
+            }
+          ],
+          "practiceLocations": []
+        }
+      ]
+    },
+    "1518985134": {
+      "status": 200,
+      "result_count": 1,
+      "results": [
+        {
+          "number": "1518985134",
+          "basic": {
+            "credential": "M.D.",
+            "enumeration_date": "2006-07-18",
+            "first_name": "SUZANNE",
+            "last_name": "SOUTHERLAND",
+            "last_updated": "2011-09-02",
+            "name_prefix": "--",
+            "name_suffix": "--",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "208000000X",
+              "desc": "Pediatrics",
+              "license": "ME78267",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "3400 BEE RIDGE RD",
+              "address_2": "SUITE 120",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-924-9919",
+              "postal_code": "342397243",
+              "state": "FL",
+              "telephone_number": "941-924-9900"
+            },
+            {
+              "address_1": "3400 BEE RIDGE RD",
+              "address_2": "SUITE 120",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-924-9919",
+              "postal_code": "342397243",
+              "state": "FL",
+              "telephone_number": "941-924-9900"
+            }
+          ],
+          "practiceLocations": []
+        }
+      ]
+    },
+    "1699091355": {
+      "status": 200,
+      "result_count": 1,
+      "results": [
+        {
+          "number": "1699091355",
+          "basic": {
+            "credential": "M.D.",
+            "enumeration_date": "2010-04-20",
+            "first_name": "REBECCA",
+            "last_name": "LLAMADO",
+            "last_updated": "2013-05-22",
+            "middle_name": "BAUER",
+            "name_prefix": "--",
+            "name_suffix": "--",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "208000000X",
+              "desc": "Pediatrics",
+              "license": "ME 115348",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "1700 S TAMIAMI TRL",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342393509",
+              "state": "FL",
+              "telephone_number": "941-917-9000"
+            },
+            {
+              "address_1": "1700 S TAMIAMI TRL",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342393509",
+              "state": "FL",
+              "telephone_number": "941-917-9000"
+            }
+          ],
+          "practiceLocations": []
+        }
+      ]
+    },
+    "1730529652": {
+      "status": 200,
+      "result_count": 1,
+      "results": [
+        {
+          "number": "1730529652",
+          "basic": {
+            "credential": "M.D.",
+            "enumeration_date": "2013-06-25",
+            "first_name": "GABRIELLE",
+            "last_name": "BOODOO",
+            "last_updated": "2018-09-11",
+            "middle_name": "M.",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "208000000X",
+              "desc": "Pediatrics",
+              "license": "ME134743",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "3400 BEE RIDGE RD STE 120",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342397243",
+              "state": "FL",
+              "telephone_number": "941-924-9900"
+            },
+            {
+              "address_1": "3400 BEE RIDGE RD STE 120",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342397243",
+              "state": "FL",
+              "telephone_number": "941-924-9900"
+            }
+          ],
+          "practiceLocations": [
+            {
+              "address_1": "633 SUNSET LN",
+              "address_2": "SUITE A&C",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "CULPEPER",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "540-829-0945",
+              "postal_code": "227013942",
+              "state": "VA",
+              "telephone_number": "540-825-5381"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "searches": {
+    "pediatrics_34232_location": {
+      "status": 200,
+      "url": "https://npiregistry.cms.hhs.gov/api/?version=2.1&pretty=off&enumeration_type=NPI-1&state=FL&postal_code=34232&taxonomy_description=Pediatrics&address_purpose=LOCATION&limit=200",
+      "result_count": 5,
+      "numbers": [
+        "1427474774",
+        "1770022501",
+        "1043797939",
+        "1225775745",
+        "1982809455"
+      ],
+      "results": [
+        {
+          "number": "1427474774",
+          "basic": {
+            "credential": "FNP-C",
+            "enumeration_date": "2014-03-11",
+            "first_name": "TARA",
+            "last_name": "COCCO",
+            "last_updated": "2014-06-20",
+            "name_prefix": "--",
+            "name_suffix": "--",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "RN9183330",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2201 CANTU CT",
+              "address_2": "117",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326260",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            },
+            {
+              "address_1": "2201 CANTU CT STE 117",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-487-8025",
+              "postal_code": "342326254",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1770022501",
+          "basic": {
+            "certification_date": "2023-08-12",
+            "credential": "ARNP",
+            "enumeration_date": "2017-02-13",
+            "first_name": "ALISON",
+            "last_name": "GRIFFIN",
+            "last_updated": "2023-08-14",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "APRN9236792",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2201 CANTU CT",
+              "address_2": "SUITE 117",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-437-8025",
+              "postal_code": "342326260",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            },
+            {
+              "address_1": "2201 CANTU CT",
+              "address_2": "SUITE 117",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-437-8025",
+              "postal_code": "342326260",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1043797939",
+          "basic": {
+            "credential": "APRN",
+            "enumeration_date": "2018-07-24",
+            "first_name": "STACIE",
+            "last_name": "LEMON OLIVARRI",
+            "last_updated": "2019-02-25",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "ARNP9482658",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2201 CANTU CT STE 117",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "34232",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            },
+            {
+              "address_1": "2201 CANTU CT STE 117",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326254",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1225775745",
+          "basic": {
+            "certification_date": "2022-05-12",
+            "credential": "APRN",
+            "enumeration_date": "2022-05-16",
+            "first_name": "KIMBERLY",
+            "last_name": "MCCAFFREY",
+            "last_updated": "2022-05-16",
+            "middle_name": "ANNE",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "APRN11018055",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2020 CATTLEMEN RD",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326243",
+              "state": "FL"
+            },
+            {
+              "address_1": "2020 CATTLEMEN RD STE 600",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326284",
+              "state": "FL",
+              "telephone_number": "941-955-5191"
+            }
+          ],
+          "practiceLocations": [
+            {
+              "address_1": "2447 SYCAMORE ST",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "NORTH PORT",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342899506",
+              "state": "FL",
+              "telephone_number": "941-955-5191"
+            }
+          ]
+        },
+        {
+          "number": "1982809455",
+          "basic": {
+            "credential": "A.R.N.P.",
+            "enumeration_date": "2007-06-15",
+            "first_name": "LISA",
+            "last_name": "PATTERSON",
+            "last_updated": "2017-01-22",
+            "middle_name": "T",
+            "name_prefix": "Dr.",
+            "name_suffix": "--",
+            "sex": "F",
+            "sole_proprietor": "YES",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "3281002",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "107 CORTE DEL ROSA",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "VENICE",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-366-7583",
+              "postal_code": "342853235",
+              "state": "FL",
+              "telephone_number": "941-780-2767"
+            },
+            {
+              "address_1": "2020 CATTLEMEN RD",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-366-7582",
+              "postal_code": "342326243",
+              "state": "FL",
+              "telephone_number": "941-955-5151"
+            }
+          ],
+          "practiceLocations": []
+        }
+      ],
+      "text_head": "{\"result_count\":5,\"results\":[{\"addresses\":[{\"address_1\":\"2201 CANTU CT\",\"address_2\":\"117\",\"address_purpose\":\"MAILING\",\"address_type\":\"DOM\",\"city\":\"SARASOTA\",\"country_code\":\"US\",\"country_name\":\"United States\",\"postal_code\":\"342326260\",\"state\":\"FL\",\"telephone_number\":\"941-552-8341\"},{\"address_1\":\"2201 CANTU CT STE 117\",\"address_purpose\":\"LOCATION\",\"address_type\":\"DOM\",\"city\":\"SARASOTA\",\"country_code\":\"US\",\"country_name\":\"United States\",\"fax_number\":\"941-487-8025\",\"postal_code\":\"342326254\",\"state\":\"FL\",\"telephone_number\":\"941-552-8341\"}],\"basic\":{\"credential\":\"FNP-C\",\"enumeration_date\":\"2014-03-11\",\"first_name\":\"TARA\",\"last_name\":\"COCCO\",\"last_updated\":\"2014-06-20\",\"name_prefix\":\"--\",\"name_suffix\":\"--\",\"sex\":\"F\",\"sole_proprietor\":\"NO\",\"status\":\"A\"},\"created_epoch\":\"1394562560000\",\"endpoints\":[],\"enumeration_type\":\"NPI-1\",\"identifiers\":[],\"last_updated_epoch\":\"1403274742000\",\"number\":\"1427474774\",\"other_names\":[],\"practiceLocations\":[],\"taxonomies\":[{\"code\":\"363LP0200X\",\"desc\":\"Nurse Pract"
+    },
+    "pediatrics_34232_primary": {
+      "status": 200,
+      "url": "https://npiregistry.cms.hhs.gov/api/?version=2.1&pretty=off&enumeration_type=NPI-1&state=FL&postal_code=34232&taxonomy_description=Pediatrics&address_purpose=PRIMARY&limit=200",
+      "result_count": 5,
+      "numbers": [
+        "1427474774",
+        "1770022501",
+        "1043797939",
+        "1225775745",
+        "1982809455"
+      ],
+      "results": [
+        {
+          "number": "1427474774",
+          "basic": {
+            "credential": "FNP-C",
+            "enumeration_date": "2014-03-11",
+            "first_name": "TARA",
+            "last_name": "COCCO",
+            "last_updated": "2014-06-20",
+            "name_prefix": "--",
+            "name_suffix": "--",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "RN9183330",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2201 CANTU CT",
+              "address_2": "117",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326260",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            },
+            {
+              "address_1": "2201 CANTU CT STE 117",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-487-8025",
+              "postal_code": "342326254",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1770022501",
+          "basic": {
+            "certification_date": "2023-08-12",
+            "credential": "ARNP",
+            "enumeration_date": "2017-02-13",
+            "first_name": "ALISON",
+            "last_name": "GRIFFIN",
+            "last_updated": "2023-08-14",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "APRN9236792",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2201 CANTU CT",
+              "address_2": "SUITE 117",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-437-8025",
+              "postal_code": "342326260",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            },
+            {
+              "address_1": "2201 CANTU CT",
+              "address_2": "SUITE 117",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-437-8025",
+              "postal_code": "342326260",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1043797939",
+          "basic": {
+            "credential": "APRN",
+            "enumeration_date": "2018-07-24",
+            "first_name": "STACIE",
+            "last_name": "LEMON OLIVARRI",
+            "last_updated": "2019-02-25",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "ARNP9482658",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2201 CANTU CT STE 117",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "34232",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            },
+            {
+              "address_1": "2201 CANTU CT STE 117",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326254",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1225775745",
+          "basic": {
+            "certification_date": "2022-05-12",
+            "credential": "APRN",
+            "enumeration_date": "2022-05-16",
+            "first_name": "KIMBERLY",
+            "last_name": "MCCAFFREY",
+            "last_updated": "2022-05-16",
+            "middle_name": "ANNE",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "APRN11018055",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2020 CATTLEMEN RD",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326243",
+              "state": "FL"
+            },
+            {
+              "address_1": "2020 CATTLEMEN RD STE 600",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326284",
+              "state": "FL",
+              "telephone_number": "941-955-5191"
+            }
+          ],
+          "practiceLocations": [
+            {
+              "address_1": "2447 SYCAMORE ST",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "NORTH PORT",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342899506",
+              "state": "FL",
+              "telephone_number": "941-955-5191"
+            }
+          ]
+        },
+        {
+          "number": "1982809455",
+          "basic": {
+            "credential": "A.R.N.P.",
+            "enumeration_date": "2007-06-15",
+            "first_name": "LISA",
+            "last_name": "PATTERSON",
+            "last_updated": "2017-01-22",
+            "middle_name": "T",
+            "name_prefix": "Dr.",
+            "name_suffix": "--",
+            "sex": "F",
+            "sole_proprietor": "YES",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "3281002",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "107 CORTE DEL ROSA",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "VENICE",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-366-7583",
+              "postal_code": "342853235",
+              "state": "FL",
+              "telephone_number": "941-780-2767"
+            },
+            {
+              "address_1": "2020 CATTLEMEN RD",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-366-7582",
+              "postal_code": "342326243",
+              "state": "FL",
+              "telephone_number": "941-955-5151"
+            }
+          ],
+          "practiceLocations": []
+        }
+      ],
+      "text_head": "{\"result_count\":5,\"results\":[{\"addresses\":[{\"address_1\":\"2201 CANTU CT\",\"address_2\":\"117\",\"address_purpose\":\"MAILING\",\"address_type\":\"DOM\",\"city\":\"SARASOTA\",\"country_code\":\"US\",\"country_name\":\"United States\",\"postal_code\":\"342326260\",\"state\":\"FL\",\"telephone_number\":\"941-552-8341\"},{\"address_1\":\"2201 CANTU CT STE 117\",\"address_purpose\":\"LOCATION\",\"address_type\":\"DOM\",\"city\":\"SARASOTA\",\"country_code\":\"US\",\"country_name\":\"United States\",\"fax_number\":\"941-487-8025\",\"postal_code\":\"342326254\",\"state\":\"FL\",\"telephone_number\":\"941-552-8341\"}],\"basic\":{\"credential\":\"FNP-C\",\"enumeration_date\":\"2014-03-11\",\"first_name\":\"TARA\",\"last_name\":\"COCCO\",\"last_updated\":\"2014-06-20\",\"name_prefix\":\"--\",\"name_suffix\":\"--\",\"sex\":\"F\",\"sole_proprietor\":\"NO\",\"status\":\"A\"},\"created_epoch\":\"1394562560000\",\"endpoints\":[],\"enumeration_type\":\"NPI-1\",\"identifiers\":[],\"last_updated_epoch\":\"1403274742000\",\"number\":\"1427474774\",\"other_names\":[],\"practiceLocations\":[],\"taxonomies\":[{\"code\":\"363LP0200X\",\"desc\":\"Nurse Pract"
+    },
+    "pediatrics_34232_no_purpose": {
+      "status": 200,
+      "url": "https://npiregistry.cms.hhs.gov/api/?version=2.1&pretty=off&enumeration_type=NPI-1&state=FL&postal_code=34232&taxonomy_description=Pediatrics&limit=200",
+      "result_count": 5,
+      "numbers": [
+        "1427474774",
+        "1770022501",
+        "1043797939",
+        "1225775745",
+        "1982809455"
+      ],
+      "results": [
+        {
+          "number": "1427474774",
+          "basic": {
+            "credential": "FNP-C",
+            "enumeration_date": "2014-03-11",
+            "first_name": "TARA",
+            "last_name": "COCCO",
+            "last_updated": "2014-06-20",
+            "name_prefix": "--",
+            "name_suffix": "--",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "RN9183330",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2201 CANTU CT",
+              "address_2": "117",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326260",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            },
+            {
+              "address_1": "2201 CANTU CT STE 117",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-487-8025",
+              "postal_code": "342326254",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1770022501",
+          "basic": {
+            "certification_date": "2023-08-12",
+            "credential": "ARNP",
+            "enumeration_date": "2017-02-13",
+            "first_name": "ALISON",
+            "last_name": "GRIFFIN",
+            "last_updated": "2023-08-14",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "APRN9236792",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2201 CANTU CT",
+              "address_2": "SUITE 117",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-437-8025",
+              "postal_code": "342326260",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            },
+            {
+              "address_1": "2201 CANTU CT",
+              "address_2": "SUITE 117",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-437-8025",
+              "postal_code": "342326260",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1043797939",
+          "basic": {
+            "credential": "APRN",
+            "enumeration_date": "2018-07-24",
+            "first_name": "STACIE",
+            "last_name": "LEMON OLIVARRI",
+            "last_updated": "2019-02-25",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "ARNP9482658",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2201 CANTU CT STE 117",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "34232",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            },
+            {
+              "address_1": "2201 CANTU CT STE 117",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326254",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1225775745",
+          "basic": {
+            "certification_date": "2022-05-12",
+            "credential": "APRN",
+            "enumeration_date": "2022-05-16",
+            "first_name": "KIMBERLY",
+            "last_name": "MCCAFFREY",
+            "last_updated": "2022-05-16",
+            "middle_name": "ANNE",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "APRN11018055",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2020 CATTLEMEN RD",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326243",
+              "state": "FL"
+            },
+            {
+              "address_1": "2020 CATTLEMEN RD STE 600",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326284",
+              "state": "FL",
+              "telephone_number": "941-955-5191"
+            }
+          ],
+          "practiceLocations": [
+            {
+              "address_1": "2447 SYCAMORE ST",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "NORTH PORT",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342899506",
+              "state": "FL",
+              "telephone_number": "941-955-5191"
+            }
+          ]
+        },
+        {
+          "number": "1982809455",
+          "basic": {
+            "credential": "A.R.N.P.",
+            "enumeration_date": "2007-06-15",
+            "first_name": "LISA",
+            "last_name": "PATTERSON",
+            "last_updated": "2017-01-22",
+            "middle_name": "T",
+            "name_prefix": "Dr.",
+            "name_suffix": "--",
+            "sex": "F",
+            "sole_proprietor": "YES",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "3281002",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "107 CORTE DEL ROSA",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "VENICE",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-366-7583",
+              "postal_code": "342853235",
+              "state": "FL",
+              "telephone_number": "941-780-2767"
+            },
+            {
+              "address_1": "2020 CATTLEMEN RD",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-366-7582",
+              "postal_code": "342326243",
+              "state": "FL",
+              "telephone_number": "941-955-5151"
+            }
+          ],
+          "practiceLocations": []
+        }
+      ],
+      "text_head": "{\"result_count\":5,\"results\":[{\"addresses\":[{\"address_1\":\"2201 CANTU CT\",\"address_2\":\"117\",\"address_purpose\":\"MAILING\",\"address_type\":\"DOM\",\"city\":\"SARASOTA\",\"country_code\":\"US\",\"country_name\":\"United States\",\"postal_code\":\"342326260\",\"state\":\"FL\",\"telephone_number\":\"941-552-8341\"},{\"address_1\":\"2201 CANTU CT STE 117\",\"address_purpose\":\"LOCATION\",\"address_type\":\"DOM\",\"city\":\"SARASOTA\",\"country_code\":\"US\",\"country_name\":\"United States\",\"fax_number\":\"941-487-8025\",\"postal_code\":\"342326254\",\"state\":\"FL\",\"telephone_number\":\"941-552-8341\"}],\"basic\":{\"credential\":\"FNP-C\",\"enumeration_date\":\"2014-03-11\",\"first_name\":\"TARA\",\"last_name\":\"COCCO\",\"last_updated\":\"2014-06-20\",\"name_prefix\":\"--\",\"name_suffix\":\"--\",\"sex\":\"F\",\"sole_proprietor\":\"NO\",\"status\":\"A\"},\"created_epoch\":\"1394562560000\",\"endpoints\":[],\"enumeration_type\":\"NPI-1\",\"identifiers\":[],\"last_updated_epoch\":\"1403274742000\",\"number\":\"1427474774\",\"other_names\":[],\"practiceLocations\":[],\"taxonomies\":[{\"code\":\"363LP0200X\",\"desc\":\"Nurse Pract"
+    },
+    "pediatrics_sarasota_city": {
+      "status": 200,
+      "url": "https://npiregistry.cms.hhs.gov/api/?version=2.1&pretty=off&enumeration_type=NPI-1&state=FL&city=SARASOTA&taxonomy_description=Pediatrics&address_purpose=LOCATION&limit=200",
+      "result_count": 14,
+      "numbers": [
+        "1083953806",
+        "1508963042",
+        "1619218716",
+        "1427474774",
+        "1275505844",
+        "1316185580",
+        "1770022501",
+        "1336479609",
+        "1043797939",
+        "1225775745",
+        "1982809455",
+        "1467236893",
+        "1255085452",
+        "1326151622"
+      ],
+      "results": [
+        {
+          "number": "1083953806",
+          "basic": {
+            "credential": "ARNP",
+            "enumeration_date": "2013-02-14",
+            "first_name": "CANDACE",
+            "last_name": "BASSETT",
+            "last_updated": "2013-02-14",
+            "middle_name": "STEVENS",
+            "name_prefix": "Mrs.",
+            "name_suffix": "--",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "2859702",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "1428 S OSPREY AVE",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342392924",
+              "state": "FL",
+              "telephone_number": "941-365-9222"
+            },
+            {
+              "address_1": "1428 S OSPREY AVE",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342392924",
+              "state": "FL",
+              "telephone_number": "941-365-9222"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1508963042",
+          "basic": {
+            "certification_date": "2024-05-07",
+            "credential": "MS ARNP CPNP-PC",
+            "enumeration_date": "2006-09-19",
+            "first_name": "LISA",
+            "last_name": "BERNARD",
+            "last_updated": "2024-05-07",
+            "middle_name": "ANN",
+            "name_prefix": "Ms.",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "APRN9179876",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "3920 BEE RIDGE ROAD",
+              "address_2": "BUILDING A SUITE C",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-924-3246",
+              "postal_code": "34233",
+              "state": "FL",
+              "telephone_number": "941-923-3667"
+            },
+            {
+              "address_1": "3920 BEE RIDGE ROAD",
+              "address_2": "BUILDING A SUITE C",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-924-3246",
+              "postal_code": "34233",
+              "state": "FL",
+              "telephone_number": "941-923-3667"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1619218716",
+          "basic": {
+            "credential": "ARNP",
+            "enumeration_date": "2013-03-14",
+            "first_name": "VALERIE",
+            "last_name": "BRYANT",
+            "last_updated": "2013-03-14",
+            "middle_name": "ALICE",
+            "name_prefix": "Mrs.",
+            "name_suffix": "--",
+            "sex": "F",
+            "sole_proprietor": "YES",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "ARNP9221877",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "3333 CLARK RD",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-927-9645",
+              "postal_code": "342318432",
+              "state": "FL",
+              "telephone_number": "941-923-1809"
+            },
+            {
+              "address_1": "3333 CLARK RD",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-927-9645",
+              "postal_code": "342318432",
+              "state": "FL",
+              "telephone_number": "941-923-1809"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1427474774",
+          "basic": {
+            "credential": "FNP-C",
+            "enumeration_date": "2014-03-11",
+            "first_name": "TARA",
+            "last_name": "COCCO",
+            "last_updated": "2014-06-20",
+            "name_prefix": "--",
+            "name_suffix": "--",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "RN9183330",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2201 CANTU CT",
+              "address_2": "117",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326260",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            },
+            {
+              "address_1": "2201 CANTU CT STE 117",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-487-8025",
+              "postal_code": "342326254",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1275505844",
+          "basic": {
+            "certification_date": "2022-11-25",
+            "credential": "MD",
+            "enumeration_date": "2006-02-07",
+            "first_name": "RICARDO",
+            "last_name": "FERRAZ",
+            "last_updated": "2023-03-07",
+            "middle_name": "JP",
+            "name_prefix": "Dr.",
+            "sex": "M",
+            "sole_proprietor": "YES",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "2080A0000X",
+              "desc": "Pediatrics, Adolescent Medicine",
+              "license": "25MA04109100",
+              "primary": false,
+              "state": "NJ",
+              "taxonomy_group": ""
+            },
+            {
+              "code": "2080A0000X",
+              "desc": "Pediatrics, Adolescent Medicine",
+              "license": "ME158063",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": "193400000X - Single Specialty Group"
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "5656 BENEVA WOODS CIR",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "973-589-2405",
+              "postal_code": "342334124",
+              "state": "FL",
+              "telephone_number": "973-477-1952"
+            },
+            {
+              "address_1": "5656 BENEVA WOODS CIR",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "973-589-2405",
+              "postal_code": "342334124",
+              "state": "FL",
+              "telephone_number": "973-477-1952"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1316185580",
+          "basic": {
+            "credential": "ARNP",
+            "enumeration_date": "2009-01-27",
+            "first_name": "HEATHER",
+            "last_name": "GIRK",
+            "last_updated": "2012-09-18",
+            "name_prefix": "--",
+            "name_suffix": "--",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "3061442",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "720 S ORANGE AVE",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-366-1849",
+              "postal_code": "342367718",
+              "state": "FL",
+              "telephone_number": "941-365-1277"
+            },
+            {
+              "address_1": "720 S ORANGE AVE",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-366-1849",
+              "postal_code": "342367718",
+              "state": "FL",
+              "telephone_number": "941-365-1277"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1770022501",
+          "basic": {
+            "certification_date": "2023-08-12",
+            "credential": "ARNP",
+            "enumeration_date": "2017-02-13",
+            "first_name": "ALISON",
+            "last_name": "GRIFFIN",
+            "last_updated": "2023-08-14",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "APRN9236792",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2201 CANTU CT",
+              "address_2": "SUITE 117",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-437-8025",
+              "postal_code": "342326260",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            },
+            {
+              "address_1": "2201 CANTU CT",
+              "address_2": "SUITE 117",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-437-8025",
+              "postal_code": "342326260",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1336479609",
+          "basic": {
+            "credential": "CNP",
+            "enumeration_date": "2010-01-08",
+            "first_name": "BARBARA",
+            "last_name": "JAMISON",
+            "last_updated": "2012-05-04",
+            "middle_name": "J.",
+            "name_prefix": "Dr.",
+            "name_suffix": "--",
+            "sex": "F",
+            "sole_proprietor": "YES",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "1256272",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2200 RINGLING BLVD",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342376102",
+              "state": "FL",
+              "telephone_number": "941-861-9200"
+            },
+            {
+              "address_1": "1793 POMELO DR",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "VENICE",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342932735",
+              "state": "FL",
+              "telephone_number": "231-432-0156"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1043797939",
+          "basic": {
+            "credential": "APRN",
+            "enumeration_date": "2018-07-24",
+            "first_name": "STACIE",
+            "last_name": "LEMON OLIVARRI",
+            "last_updated": "2019-02-25",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "ARNP9482658",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2201 CANTU CT STE 117",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "34232",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            },
+            {
+              "address_1": "2201 CANTU CT STE 117",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326254",
+              "state": "FL",
+              "telephone_number": "941-552-8341"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1225775745",
+          "basic": {
+            "certification_date": "2022-05-12",
+            "credential": "APRN",
+            "enumeration_date": "2022-05-16",
+            "first_name": "KIMBERLY",
+            "last_name": "MCCAFFREY",
+            "last_updated": "2022-05-16",
+            "middle_name": "ANNE",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "APRN11018055",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2020 CATTLEMEN RD",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326243",
+              "state": "FL"
+            },
+            {
+              "address_1": "2020 CATTLEMEN RD STE 600",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342326284",
+              "state": "FL",
+              "telephone_number": "941-955-5191"
+            }
+          ],
+          "practiceLocations": [
+            {
+              "address_1": "2447 SYCAMORE ST",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "NORTH PORT",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342899506",
+              "state": "FL",
+              "telephone_number": "941-955-5191"
+            }
+          ]
+        },
+        {
+          "number": "1982809455",
+          "basic": {
+            "credential": "A.R.N.P.",
+            "enumeration_date": "2007-06-15",
+            "first_name": "LISA",
+            "last_name": "PATTERSON",
+            "last_updated": "2017-01-22",
+            "middle_name": "T",
+            "name_prefix": "Dr.",
+            "name_suffix": "--",
+            "sex": "F",
+            "sole_proprietor": "YES",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "3281002",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "107 CORTE DEL ROSA",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "VENICE",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-366-7583",
+              "postal_code": "342853235",
+              "state": "FL",
+              "telephone_number": "941-780-2767"
+            },
+            {
+              "address_1": "2020 CATTLEMEN RD",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-366-7582",
+              "postal_code": "342326243",
+              "state": "FL",
+              "telephone_number": "941-955-5151"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1467236893",
+          "basic": {
+            "certification_date": "2023-08-24",
+            "credential": "APRN",
+            "enumeration_date": "2023-08-24",
+            "first_name": "ARIELLE",
+            "last_name": "PAULL",
+            "last_updated": "2023-08-24",
+            "name_prefix": "Mrs.",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "APRN11028187",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "2901 58TH AVE N",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "ST PETERSBURG",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "727-456-1399",
+              "postal_code": "337141326",
+              "state": "FL",
+              "telephone_number": "727-822-4300"
+            },
+            {
+              "address_1": "601 5TH ST S STE 605",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "ST PETERSBURG",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "727-456-1399",
+              "postal_code": "337014804",
+              "state": "FL",
+              "telephone_number": "727-822-4300"
+            }
+          ],
+          "practiceLocations": [
+            {
+              "address_1": "4040 SAWYER RD",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "342331272",
+              "state": "FL",
+              "telephone_number": "941-960-1314"
+            }
+          ]
+        },
+        {
+          "number": "1255085452",
+          "basic": {
+            "certification_date": "2025-12-10",
+            "credential": "APRN",
+            "enumeration_date": "2022-02-07",
+            "first_name": "REGINA",
+            "last_name": "PERRY",
+            "last_updated": "2025-12-10",
+            "middle_name": "DOLORES",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "APRN11016556",
+              "primary": true,
+              "state": "FL",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "1750 17TH ST STE E",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "855-526-0216",
+              "postal_code": "342348666",
+              "state": "FL",
+              "telephone_number": "941-529-0200"
+            },
+            {
+              "address_1": "1900 BROTHER GEENEN WAY",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "833-606-0218",
+              "postal_code": "342367102",
+              "state": "FL",
+              "telephone_number": "941-529-0200"
+            }
+          ],
+          "practiceLocations": []
+        },
+        {
+          "number": "1326151622",
+          "basic": {
+            "certification_date": "2023-07-14",
+            "credential": "PCPNP",
+            "enumeration_date": "2006-08-17",
+            "first_name": "LINDA",
+            "last_name": "SOEKER",
+            "last_updated": "2023-07-14",
+            "middle_name": "A",
+            "name_prefix": "Mrs.",
+            "sex": "F",
+            "sole_proprietor": "NO",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "ARNP3342442",
+              "primary": false,
+              "state": "FL",
+              "taxonomy_group": ""
+            },
+            {
+              "code": "363LP0200X",
+              "desc": "Nurse Practitioner, Pediatrics",
+              "license": "GAA-NP001301",
+              "primary": true,
+              "state": "GA",
+              "taxonomy_group": ""
+            }
+          ],
+          "addresses": [
+            {
+              "address_1": "PO BOX 742616",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "city": "ATLANTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "303742616",
+              "state": "GA",
+              "telephone_number": "770-219-8420"
+            },
+            {
+              "address_1": "30 COTTONWOOD ST",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "CLAYTON",
+              "country_code": "US",
+              "country_name": "United States",
+              "postal_code": "305254295",
+              "state": "GA",
+              "telephone_number": "706-782-7040"
+            }
+          ],
+          "practiceLocations": [
+            {
+              "address_1": "712 39TH ST W",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "BRADENTON",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-747-9230",
+              "postal_code": "342052454",
+              "state": "FL",
+              "telephone_number": "941-748-4602"
+            },
+            {
+              "address_1": "5664 BEE RIDGE RD STE 202",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "city": "SARASOTA",
+              "country_code": "US",
+              "country_name": "United States",
+              "fax_number": "941-377-6407",
+              "postal_code": "342331504",
+              "state": "FL",
+              "telephone_number": "941-377-6406"
+            }
+          ]
+        }
+      ],
+      "text_head": "{\"result_count\":14,\"results\":[{\"addresses\":[{\"address_1\":\"1428 S OSPREY AVE\",\"address_purpose\":\"MAILING\",\"address_type\":\"DOM\",\"city\":\"SARASOTA\",\"country_code\":\"US\",\"country_name\":\"United States\",\"postal_code\":\"342392924\",\"state\":\"FL\",\"telephone_number\":\"941-365-9222\"},{\"address_1\":\"1428 S OSPREY AVE\",\"address_purpose\":\"LOCATION\",\"address_type\":\"DOM\",\"city\":\"SARASOTA\",\"country_code\":\"US\",\"country_name\":\"United States\",\"postal_code\":\"342392924\",\"state\":\"FL\",\"telephone_number\":\"941-365-9222\"}],\"basic\":{\"credential\":\"ARNP\",\"enumeration_date\":\"2013-02-14\",\"first_name\":\"CANDACE\",\"last_name\":\"BASSETT\",\"last_updated\":\"2013-02-14\",\"middle_name\":\"STEVENS\",\"name_prefix\":\"Mrs.\",\"name_suffix\":\"--\",\"sex\":\"F\",\"sole_proprietor\":\"NO\",\"status\":\"A\"},\"created_epoch\":\"1360863949000\",\"endpoints\":[],\"enumeration_type\":\"NPI-1\",\"identifiers\":[],\"last_updated_epoch\":\"1360863949000\",\"number\":\"1083953806\",\"other_names\":[],\"practiceLocations\":[],\"taxonomies\":[{\"code\":\"363LP0200X\",\"desc\":\"Nurse Practitioner, Pediat"
+    },
+    "taxonomy_wildcard_34232": {
+      "status": 200,
+      "url": "https://npiregistry.cms.hhs.gov/api/?version=2.1&pretty=off&enumeration_type=NPI-1&state=FL&postal_code=34232&taxonomy_description=Pediatr%2A&address_purpose=LOCATION&limit=200",
+      "result_count": 0,
+      "numbers": [],
+      "results": [],
+      "text_head": "{\"result_count\":0,\"results\":[]}"
+    }
+  }
+}
