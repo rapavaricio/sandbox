@@ -1,2 +1,2 @@
 Run requested for the Sarasota County primary-care public-data directory on 2026-07-28.
-Diagnostic refresh: pediatric NPPES search behavior.
+Comprehensive exact-ZIP, no-specialty-keyword extraction refresh.
