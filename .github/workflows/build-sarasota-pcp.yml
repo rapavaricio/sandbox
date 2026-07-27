@@ -5,10 +5,12 @@ on:
   push:
     paths:
       - "scripts/build_sarasota_pcp.py"
+      - "scripts/build_sarasota_pcp_v2.py"
       - ".github/workflows/build-sarasota-pcp.yml"
   pull_request:
     paths:
       - "scripts/build_sarasota_pcp.py"
+      - "scripts/build_sarasota_pcp_v2.py"
       - ".github/workflows/build-sarasota-pcp.yml"
       - "tmp/trigger-sarasota-pcp.txt"
 
@@ -38,7 +40,7 @@ jobs:
         run: python -m pip install --disable-pip-version-check requests
 
       - name: Extract and verify Sarasota County physicians
-        run: python scripts/build_sarasota_pcp.py
+        run: python scripts/build_sarasota_pcp_v2.py
 
       - name: Upload public-data extracts
         uses: actions/upload-artifact@v4
